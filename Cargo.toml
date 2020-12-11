@@ -1,0 +1,29 @@
+[package]
+authors = ["Imagine Impact <Thomas@imagine-impact.com>"]
+edition = "2018"
+name = "cloudinary"
+version = "0.1.0"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[profile.dev]
+opt-level = 0
+
+[profile.release]
+opt-level = 3
+
+[dependencies]
+anyhow = "1.0.34"
+async-graphql = {version = "2.1.6", features = ["unblock"]}
+bytes = "0.5.6"
+data-encoding = "2.3.1"
+futures = "0.3.8"
+futures-core = "0.3.8"
+futures-util = "0.3.8"
+lazy_static = "1.4.0"
+ring = "0.16.19"
+serde = "1.0.117"
+surf = "2.1.0"
+tokio = "0.3.5"
+tokio-util = {version = "0.5.1", features = ["codec"]}
+awc = "2.0.3"
